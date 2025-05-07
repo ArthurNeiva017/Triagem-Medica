@@ -39,6 +39,8 @@ def solicitar_dados():
         peso = int(input('Digite o peso do paciente: '))
     sintomas = input("Descreva os sintomas: ")
 
+
+
     urgencia = classificar_urgencia(sintomas)
 
     atendimento = {
