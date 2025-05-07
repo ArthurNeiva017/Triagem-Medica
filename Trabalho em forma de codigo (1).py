@@ -34,9 +34,6 @@ def solicitar_dados():
         print('Idade Inválida, Digite novamente a idade correta')
         idade = int(input('Digite a idade a idade do paciente'))
     peso = int(input("Digite o peso do paciente: "))
-    while peso < 0 or peso > 400:
-        print('Peso Inválido, digite novamente o peso')
-        peso = int(input('Digite o peso do paciente: '))
     sintomas = input("Descreva os sintomas: ")
 
 
