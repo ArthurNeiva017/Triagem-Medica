@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: 0.3s;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img-triagem {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 30px 25px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    border: #d8cfcf 1px solid;
+}
+
+.nav-home a {
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-home a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.nav-cadastro a {
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-cadastro a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.nav-consultas a {
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-consultas a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.acesso {
+    background-color: grey;
+    width: 700px;
+    height: 360px;
+    border-radius: 30px;
+    grid-row: 2/3;  
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.acesso h2, input {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    margin-left: 25px;
+    padding-left: 30px;
+    border: none;
+}
+
+.description {
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 25px;
+    border-radius: 20px;
+    background-color: grey;
+    width: 500px;
+    height: 730px;
+    grid-column: 4/5;
+    margin-right: 30px;
+    font-size: 35px;
+    padding: 20px;
+    grid-row: 2/3;
+}
+
+.cadastro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: 100vh;
+}
+
+.cadastro h1 {
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 30px;
+    font-size: 50px;
+    grid-column: 1/4;
+    margin-top: 20px;
+}
+
+.informações-paciente {
+    grid-column: 1/2;
+}
+
+.informações-paciente input {
+    width: 650px;
+    color: black;
+}
+.sintomas {
+    grid-column: 3/4;
+    padding-right: 50px;
+}
+
+.sintomas h2{
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 30px;
+}
+
+.sintomas textarea {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    margin-left: 25px;
+    padding-left: 30px;
+    border: none;
+    height: 400px;
+    padding: 20px 30px;
+}
+
+.btn-cadastrar {
+    background-color: grey;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+    height: 70px;
+    width: 250px;
+    grid-column: 3/4;
+    margin-left: 180px;
+
+}
+
+.btn-cadastrar:hover {
+    opacity: 0.8;
+}
+
+.consultas h1 {
+    color: #fff;
+    padding-left: 100px;
+    font-size: 50px;
+    grid-column: 1/4;
+}
+
+.consultas-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    padding: 40px;
+}
+
+.consultas-lista ul {
+    background-color: rgba(29, 0, 51, 0.8); 
+    border-radius: 10px;
+    padding: 30px; 
+    list-style: none; 
+    color: #fff;
+    font-size: 26px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.consultas-lista ul li {
+    margin-bottom: 15px; 
+}

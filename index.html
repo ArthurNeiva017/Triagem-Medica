@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Triagem médica</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-home"><a href="home">Home</a></div>
+        <div class="nav-cadastro"><a href="cadastro">Cadastro</a></div>
+        <div class="nav-consultas"><a href="consultas">Consultas</a></div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="acesso">
+            <h2>Acesso rápido</h2>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+
+        </div>
+
+        <div class="description">
+            <h2>Descrição</h2>
+            <p>O sistema de triagem médica é uma ferramenta essencial para otimizar o atendimento em unidades de saúde.
+                Ele permite classificar pacientes com base na gravidade dos sintomas, garantindo que os casos mais
+                urgentes sejam atendidos primeiro. Além disso, o sistema pode coletar informações relevantes sobre o
+                histórico médico do paciente, facilitando o diagnóstico e o tratamento adequado.</p>
+        </div>
+    </section>
+
+    <section class="cadastro" id="cadastro">
+
+        <h1>Cadastro do paciente</h1>
+
+        <div class="informações-paciente">
+            <div class="cpf">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite o CPF do paciente">
+            </div>
+
+            <div class="nome-paciente">
+                <label for="nome-paciente">Nome do paciente:</label>
+                <input type="text" id="nome-paciente" name="nome-paciente" placeholder="Digite o nome do paciente">
+            </div>
+
+            <div class="idade">
+                <label for="idade">Idade:</label>
+                <input type="text" id="idade" name="idade" placeholder="Digite a idade do paciente">
+            </div>
+
+            <div class="peso">
+                <label for="peso">Peso:</label>
+                <input type="text" id="peso" name="peso" placeholder="Digite o peso do paciente">
+            </div>
+        </div>
+
+        <div class="sintomas">
+            <h2>Descreva os sintomas</h2>
+            <textarea id="sintomas" name="sintomas" rows="4" cols="50"
+                placeholder="Descreva os sintomas do paciente"></textarea>
+        </div>
+
+        <button type="submit" class="btn-cadastrar">Cadastrar</button>
+
+    </section>
+
+    <section class="consultas" id="consultas">
+        <h1>Consultas</h1>
+
+        <div class="consultas-lista">
+            <ul class="consulta1">
+
+                <li>Consulta 1</li>
+                <li>Cpf</li>
+                <li>Nome</li>
+                <li>Idade</li>
+                <li>Nível de urgência</li>
+
+            </ul>
+
+            <ul class="consulta2">
+                
+                <li>Consulta 2</li>
+                <li>Cpf</li>
+                <li>Nome</li>
+                <li>Idade</li>
+                <li>Nível de urgência</li>
+
+            </ul>
+
+            <ul class="consulta3">
+                
+                <li>Consulta 3</li>
+                <li>Cpf</li>
+                <li>Nome</li>
+                <li>Idade</li>
+                <li>Nível de urgência</li>
+
+            </ul>
+
+            <ul class="consulta4">
+                
+                <li>Consulta 4</li>
+                <li>Cpf</li>
+                <li>Nome</li>
+                <li>Idade</li>
+                <li>Nível de urgência</li>
+
+            </ul>
+
+            <ul class="consulta5">
+                
+                <li>Consulta 5</li>
+                <li>Cpf</li>
+                <li>Nome</li>
+                <li>Idade</li>
+                <li>Nível de urgência</li>
+
+            </ul>
+
+            <ul class="consulta6">
+                
+                <li>Consulta 6</li>
+                <li>Cpf</li>
+                <li>Nome</li>
+                <li>Idade</li>
+                <li>Nível de urgência</li>
+
+            </ul>
+        </div>
+
+    </section>
+</body>
+
+</html>
