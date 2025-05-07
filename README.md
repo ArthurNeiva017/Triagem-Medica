@@ -1,3 +1,7 @@
+<h1 align="center">🧬 Triagem Médica</h1>
+
+###
+
 <h2 align="left">🤖 Tecnologias</h2>
 
 ###
@@ -14,6 +18,24 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/ArthurNeiva017/ArthurNeiva017/output/snake.svg" alt="Snake animation" />
+<h2 align="left">🚀 Status GitHub</h2>
+
+###
+
+<br clear="both">
+
+<div align="left">
+  <img src="https://streak-stats.demolab.com?user=ArthurNeiva017&locale=en&mode=weekly&theme=tokyonight&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
+</div>
+
+###
+
+<h2 align="left">📊 Contribution GitHub</h2>
+
+###
+
+<div align="left">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArthurNeiva017&radius=16&theme=github-dark&area=true&order=5" height="300" alt="activity-graph graph"  />
+</div>
 
 ###
