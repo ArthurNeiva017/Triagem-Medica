@@ -1,257 +1,142 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    transition: 0.3s;
 }
 
 body {
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-}
-
-.img-triagem {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-}
-
-.home {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     gap: 20px;
-    padding: 30px 25px;
-    background: black;
-    position: fixed;
-    width: 100%;
-    border: #d8cfcf 1px solid;
+    padding: 20px 40px;
+    background-color: #6200ea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.nav-home a {
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 30px;
-    color: #fff;
-    padding: 10px 20px;
-
-}
-
-.nav-home a::after{
-    content: '';
-    height: 2px;
-    width: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(90deg, white, red);
-    transition: width 0.5s ease;
-}
-
-.nav-home a:hover::after{
-    width: 100%;
-}
-
-
-.nav-home a:hover {
-    text-decoration: underline;
-    opacity: 0.8;
-}
-
-.nav-cadastro a {
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 30px;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.nav-cadastro a::after{
-    content: '';
-    height: 2px;
-    width: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(90deg, white, red);
-    transition: width 0.5s ease;
-}
-
-.nav-cadastro a:hover::after{
-    width: 100%;
-}
-
-.nav-cadastro a:hover {
-    text-decoration: underline;
-    opacity: 0.8;
-}
-
-.nav-consultas a {
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 30px;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.nav-consultas a::after{
-    content: '';
-    height: 2px;
-    width: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(90deg, white, red);
-    transition: width 0.5s ease;
-}
-.nav-consultas a:hover::after{
-    width: 100%;
-}
-
-.nav-consultas a:hover {
-    text-decoration: underline;
-    opacity: 0.8;
-}
-
-.acesso {
-    background-color: grey;
-    width: 700px;
-    height: 360px;
-    border-radius: 30px;
-    grid-row: 2/3;  
-    margin-left: 20px;
-    margin-top: 50px;
-}
-
-.acesso h2, input {
-    color: #fff;
-    font-size: 50px;
-    margin-top: 20px;
-    flex-direction: column;
-    display: flex;
-    border-radius: 20px;
-    margin-left: 25px;
-    padding-left: 30px;
-    border: none;
-}
-
-.description {
-    color: #fff;
-    margin-top: 50px;
-    margin-left: 25px;
-    border-radius: 20px;
-    background-color: grey;
-    width: 500px;
-    height: 730px;
-    grid-column: 4/5;
-    margin-right: 30px;
-    font-size: 35px;
-    padding: 20px;
-    grid-row: 2/3;
-}
-
-.cadastro {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    height: 100vh;
-}
-
-.cadastro h1 {
-    color: #fff;
-    padding-top: 100px;
-    padding-left: 30px;
-    font-size: 50px;
-    grid-column: 1/4;
-    margin-top: 20px;
-}
-
-.informações-paciente {
-    grid-column: 1/2;
-}
-
-.informações-paciente input {
-    width: 650px;
-    color: black;
-}
-.sintomas {
-    grid-column: 3/4;
-    padding-right: 50px;
-}
-
-.sintomas h2{
-    color: #fff;
-    padding: 10px 50px;
-    font-size: 30px;
-}
-
-.sintomas textarea {
-    color: #fff;
+nav a {
+    color: white;
     font-size: 20px;
-    margin-top: 20px;
-    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+    padding: 60px 40px;
+}
+
+.home {
     display: flex;
-    border-radius: 20px;
-    margin-left: 25px;
-    padding-left: 30px;
-    border: none;
-    height: 400px;
-    padding: 20px 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.acesso, .description {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.acesso h2, .description h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.acesso input {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.description p {
+    font-size: 18px;
+    color: #555;
+}
+
+.cadastro h1, .consultas h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #6200ea;
+}
+
+.informações-paciente, .sintomas {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.informações-paciente input, .sintomas textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.sintomas h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
 }
 
 .btn-cadastrar {
-    background-color: grey;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 30px;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-left: 25px;
-    height: 70px;
-    width: 250px;
-    grid-column: 3/4;
-    margin-left: 180px;
-
+    display: inline-block;
+    background-color: #6200ea;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
 }
 
 .btn-cadastrar:hover {
-    opacity: 0.8;
-}
-
-.consultas h1 {
-    color: #fff;
-    padding-left: 100px;
-    font-size: 50px;
-    grid-column: 1/4;
+    background-color: #3700b3;
 }
 
 .consultas-lista {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
-    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .consultas-lista ul {
-    background-color: rgba(29, 0, 51, 0.8); 
+    list-style: none;
+    background-color: #fff;
     border-radius: 10px;
-    padding: 30px; 
-    list-style: none; 
-    color: #fff;
-    font-size: 26px; 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.consultas-lista ul li {
-    margin-bottom: 15px; 
+.consultas-lista li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
 }
