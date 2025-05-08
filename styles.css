@@ -43,7 +43,24 @@ nav {
     font-size: 30px;
     color: #fff;
     padding: 10px 20px;
+
 }
+
+.nav-home a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, white, red);
+    transition: width 0.5s ease;
+}
+
+.nav-home a:hover::after{
+    width: 100%;
+}
+
 
 .nav-home a:hover {
     text-decoration: underline;
@@ -58,6 +75,21 @@ nav {
     padding: 10px 20px;
 }
 
+.nav-cadastro a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, white, red);
+    transition: width 0.5s ease;
+}
+
+.nav-cadastro a:hover::after{
+    width: 100%;
+}
+
 .nav-cadastro a:hover {
     text-decoration: underline;
     opacity: 0.8;
@@ -69,6 +101,20 @@ nav {
     font-size: 30px;
     color: #fff;
     padding: 10px 20px;
+}
+
+.nav-consultas a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, white, red);
+    transition: width 0.5s ease;
+}
+.nav-consultas a:hover::after{
+    width: 100%;
 }
 
 .nav-consultas a:hover {
