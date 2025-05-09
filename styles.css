@@ -23,7 +23,14 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: white;
+    font-size: 24px;
+    margin-right: auto;
+    margin-top: 8px;
 }
 
 nav a {
@@ -36,6 +43,8 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: #9c9cd8 1px 1px 4px;
+
 }
 
 section {
@@ -49,16 +58,18 @@ section {
     gap: 40px;
 }
 
-.acesso, .description {
+.acesso,
+.description {
     background: white;
     border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     flex: 1;
     min-width: 300px;
 }
 
-.acesso h2, .description h2 {
+.acesso h2,
+.description h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -77,21 +88,24 @@ section {
     color: #555;
 }
 
-.cadastro h1, .consultas h1 {
+.cadastro h1,
+.consultas h1 {
     font-size: 36px;
     margin-bottom: 30px;
     color: #6200ea;
 }
 
-.informações-paciente, .sintomas {
+.informações-paciente,
+.sintomas {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
-.informações-paciente input, .sintomas textarea {
+.informações-paciente input,
+.sintomas textarea {
     font-size: 16px;
     padding: 10px;
     margin: 10px 0;
@@ -119,6 +133,7 @@ section {
 
 .btn-cadastrar:hover {
     background-color: #3700b3;
+    box-shadow: #333 1px 1px 4px;
 }
 
 .consultas-lista {
@@ -167,4 +182,18 @@ section {
 
 .leve {
     background-color: #388e3c;
+}
+
+.urgencias {
+    max-width: 200px;
+    background-color: #fff;
+    box-shadow: #333 1px 1px 4px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.urgencias li {
+    font-size: 16px;
+    list-style-type: none;
+    padding-left: 10px;
 }

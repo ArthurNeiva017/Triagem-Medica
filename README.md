@@ -28,13 +28,3 @@
 </div>
 
 ###
-
-<h2 align="left">📊 Contribution GitHub</h2>
-
-###
-
-<div align="left">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArthurNeiva017&radius=16&theme=github-dark&area=true&order=5" height="300" alt="activity-graph graph"  />
-</div>
-
-###
