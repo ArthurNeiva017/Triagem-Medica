@@ -28,9 +28,13 @@ nav {
 
 nav h1 {
     color: white;
-    font-size: 24px;
+    background-color: #6200ea;
+    box-shadow: #000000 8px 5px 5px;
+    padding: 1px 18px 1px;
+    border-radius: 20px;
+    font-size: 26px;
     margin-right: auto;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 nav a {
@@ -42,8 +46,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: #9c9cd8 1px 1px 4px;
+    background-color: #6200ea;
+    box-shadow: #000000 4px 4px 4px 4px ;
+    transition: all 0.7s;
 
 }
 
