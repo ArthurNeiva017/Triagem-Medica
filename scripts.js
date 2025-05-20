@@ -101,3 +101,11 @@ if (urgencia === "urgente") {
     const cloneUrgente = novaConsulta.cloneNode(true);
     divUrgencias.appendChild(cloneUrgente);
 }
+
+function validarLetras(input) {
+  const regex = /^[a-zA-Z]+$/;
+  const valor = input.value;
+  if (!regex.test(valor)) {
+    input.value = valor.replace(/[^a-zA-Z]/g, ''); // Remove caracteres inválidos
+  }
+}
