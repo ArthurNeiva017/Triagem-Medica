@@ -103,9 +103,9 @@ if (urgencia === "urgente") {
 }
 
 function validarLetras(input) {
-  const regex = /^[a-zA-Z\s]+$/;
-  const valor = input.value;
-  if (!regex.test(valor)) {
-    input.value = valor.replace(/[^a-zA-Z\s]/g, ''); 
-  }
+    const regex = /^[a-zA-Z\s]+$/;
+    const valor = input.value;
+    if (!regex.test(valor)) {
+        input.value = valor.replace(/[^a-zA-Z\s]/g, '');
+    }
 }
