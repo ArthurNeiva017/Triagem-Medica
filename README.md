@@ -57,3 +57,13 @@
 </div>
 
 ###
+
+<h2 align="left">📊 Contribuições GitHub</h2>
+
+###
+
+<div align="left">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArthurNeiva017&radius=19&theme=gotham&area=true&order=5&hide_border=false&hide_title=false" height="300" alt="activity-graph graph"  />
+</div>
+
+###
