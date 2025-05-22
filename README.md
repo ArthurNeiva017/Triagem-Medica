@@ -26,8 +26,6 @@
 
 ###
 
-<br clear="both">
-
 <div align="left">
   <a href="https://github.com/ArthurNeiva017" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Arthur%20neiva&logo=gitlab&label=&color=FF0000&logoColor=red%20&labelColor=000000&style=for-the-badge" height="39" alt="gitlab logo"  />
@@ -36,8 +34,6 @@
 
 ###
 
-<br clear="both">
-
 <div align="left">
   <a href="https://github.com/DavidMaciel-DEV" target="_blank">
     <img src="https://img.shields.io/static/v1?message=David%20Maciel&logo=gitlab&label=&color=A020F0&logoColor=purple&labelColor=000000&style=for-the-badge" height="39" alt="gitlab logo"  />
@@ -45,8 +41,6 @@
 </div>
 
 ###
-
-<br clear="both">
 
 <div align="left">
   <a href="https://github.com/guigas2407" target="_blank">
